@@ -1,0 +1,23 @@
+# Credenciais e segredos
+.env
+*.env
+secrets.json
+token.txt
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Build (o .exe e gerado por build.bat)
+build/
+dist/
+*.spec
+*.exe
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Guias locais
+githubGuia.md
