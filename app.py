@@ -100,6 +100,7 @@ class App(tk.Tk):
         self.cancelar.clear()
         self.btn_iniciar.configure(state="disabled")
         self.btn_cancelar.configure(state="normal")
+        self.barra.configure(mode="indeterminate", value=0)
         self.barra.start(12)
         self.status.configure(text="Copiando..." if not self.simular.get() else "Simulando...")
 
@@ -135,6 +136,8 @@ class App(tk.Tk):
 
     def _terminar(self, msg):
         self.barra.stop()
+        # parado em modo indeterminado, sobra um bloco solto na barra
+        self.barra.configure(mode="determinate", value=100)
         self.btn_iniciar.configure(state="normal")
         self.btn_cancelar.configure(state="disabled")
         if msg[0] == "falha":

@@ -1,5 +1,7 @@
 # Backup
 
+Site: https://matheusmerlim1.github.io/backup/ · [Baixar Backup.exe](https://github.com/matheusmerlim1/backup/releases/latest/download/Backup.exe)
+
 Programa para Windows que copia os arquivos de uma **pasta de origem** para uma **pasta de destino**, incluindo subpastas, sem sobrescrever o que já está mais atualizado.
 
 ## Como funciona
